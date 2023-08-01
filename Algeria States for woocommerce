@@ -1,0 +1,82 @@
+<?php
+    /*
+    * Plugin Name: Algeria States for woocommerce
+    * Author: Nourelhouda MAANDOUCHE
+    * Plugin URI: https://github.com/yttechiepress/states-and-cities-for-woocommerce_DZ
+    * Author URI: https://github.com/yttechiepress/states-and-cities-for-woocommerce_DZ
+    * Description: Add Algeria's States to woocommerce / إضافة الولايات الجزائرية إلى الووكومرس
+    * Version: 0.1.0
+    * License: GPL2 or later
+    * License URL: https://choosealicense.com/licenses/mit/
+    * text-domain: states-and-cities-for-woocommerce
+    */
+
+    // add basic plugin security
+    defined('ABSPATH') or die;
+
+    add_filter('woocommerce_states', 'algeria_states');
+
+    function algeria_states($states){
+        $states['DZ'] = array(
+            'DZ0' => 'أدرار',
+            'DZ1' => 'الشلف',
+            'DZ2' => 'الأغواط',
+            'DZ3' => 'أم البواقي',
+            'DZ4' => 'باتنة',
+            'DZ5' => 'بجاية',
+            'DZ6' => 'بسكرة',
+            'DZ7' => 'بشار',
+            'DZ8' => 'البليدة',
+            'DZ9' => 'البويرة',
+            'DZ10' => 'تمنراست',
+            'DZ11' => 'تبسة',
+            'DZ12' => 'تلمسان',
+            'DZ13' => 'تيارت',
+            'DZ14' => 'تيزي وزو',
+            'DZ15' => 'الجزائر',
+            'DZ16' => 'الجلفة',
+            'DZ17' => 'جيجل',
+            'DZ18' => 'سطيف',
+            'DZ19' => 'سعيدة',
+            'DZ20' => 'سكيكدة',
+            'DZ21' => 'سيدي بلعباس',
+            'DZ22' => 'عنابة',
+            'DZ23' => 'قالمة',
+            'DZ24' => 'قسنطينة',
+            'DZ25' => 'المدية',
+            'DZ26' => 'مستغانم',
+            'DZ27' => 'المسيلة',
+            'DZ28' => 'معسكر',
+            'DZ29' => 'ورقلة',
+            'DZ30' => 'وهران',
+            'DZ31' => 'البيض',
+            'DZ32' => 'إليزي',
+            'DZ33' => 'برج بوعريريج',
+            'DZ34' => 'بومرداس',
+            'DZ35' => 'الطارف',
+            'DZ36' => 'تندوف',
+            'DZ37' => 'تيسمسيلت',
+            'DZ38' => 'الوادي',
+            'DZ39' => 'خنشلة',
+            'DZ40' => 'سوق أهراس',
+            'DZ41' => 'تيبازة',
+            'DZ42' => 'ميلة',
+            'DZ43' => 'عين الدفلى',
+            'DZ44' => 'النعامة',
+            'DZ45' => 'عين تموشنت',
+            'DZ46' => 'غرداية',
+            'DZ47' => 'غليزان',
+            'DZ48' => 'تيميمون',
+            'DZ49' => 'برج باجي مختار',
+            'DZ50' => 'أولاد جلال',
+            'DZ51' => 'بني عباس',
+            'DZ52' => 'عين صالح',
+            'DZ53' => 'عين قزام',
+            'DZ54' => 'تقرت',
+            'DZ55' => 'جانت',
+            'DZ56' => 'المغير',
+            'DZ57' => 'المنيعة',
+                );
+        return $states;
+    }
+?>
